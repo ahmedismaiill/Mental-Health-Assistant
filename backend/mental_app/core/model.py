@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from config.settings import DEPRESSION_MODEL_DIR
-
+from .preprocessing import clean_text
 
 # Load the tokenizer and model for depression detection
 def load_engine():
@@ -16,6 +16,7 @@ except:
 
 # Simple sentiment prediction function using the loaded model
 def predict_sentiment(text):
+    text = clean_text(text)
     if not 'model' in globals():
         return 1 if len(text) % 2 == 0 else 0
     inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)

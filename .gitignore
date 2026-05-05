@@ -1,2 +1,4 @@
-__pycache__/
-*.pyc
+backend/mental_app/models/
+data/
+local_db/
+*.safetensors
