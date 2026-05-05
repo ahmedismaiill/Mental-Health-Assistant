@@ -105,6 +105,7 @@ D:.
 │   │   │       schemas.py
 │   │   ├───core
 │   │   │       model.py
+│   │   │       preprocessing.py
 │   │   └───models
 │   │       └───depression_model
 │   │               config.json
@@ -135,7 +136,6 @@ D:.
 │           mental_health_counseling_conversations2.csv
 │
 ├───doc
-│       NLP Practical Exam.docx
 │       NLP Practical Exam.pdf
 │
 ├───frontend                   # UI/UX Assets
@@ -147,7 +147,6 @@ D:.
 │
 └───notebooks                  # Model Training & EDA
         Mental Health Assisstant.ipynb
-        Mental Health.ipynb
 ```
 
 ---
