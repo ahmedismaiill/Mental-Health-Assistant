@@ -1,0 +1,4 @@
+backend/mental_app/models/
+data/
+local_db/
+*.safetensors
